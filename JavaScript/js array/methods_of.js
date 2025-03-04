@@ -1,41 +1,35 @@
-let arr = [3,6,7,8];
-console.log(arr.toString())
-console.log(arr.join(" and " ))
+let arr = [3, 6, 7, 8];
+console.log(arr.toString()); // Converts array to string
+console.log(arr.join(" and ")); // Joins elements with " and "
 
+console.log(arr.pop()); // Removes last element
+console.log(arr); // Prints modified array
 
-console.log(arr.pop());
+arr.push(67); // Adds 67 at the end
 console.log(arr);
 
-let arr = [3,6,7,8];
-console.log(arr.toString())  // It is used to convert array into string
-console.log(arr.join(" and " )) // It is used to replace comma with " and " or any other string
+arr.unshift("vir"); // Adds "vir" at the beginning
+console.log(arr);
 
+arr.shift(); // Removes first element
+console.log(arr);
 
+delete arr[2]; // Deletes element at index 2 (leaves undefined)
+console.log(arr);
+console.log(arr.length); // Prints length (still 4 because `delete` does not shift elements)
 
-console.log(arr.pop()); // It is used to remove last element from array
-console.log(arr); // It is used to print array after removing last element
-arr.push(67) // It is used to add element at the end of array
-console.log(arr); // It is used to print array after adding element at the end
-arr.unshift("vir"); // It is used to add element at the beginning of array
-console.log(arr); // It is used to print array after adding element at the beginning
-arr.shift() // It is used to remove first element from array
-console.log(arr); // It is used to print array after removing first element
-delete arr[2];
-console.log(arr); // It is used to print array after removing element at index 2
-console.log(arr.length)
+let a1 = [1, 2, 5, 9, 5];
+let a2 = [6, 7, 8, 9, 10];
+let a3 = [11, 12, 1, 3, 6];
 
-let a1 = [1,2,5,9,5];
-let a2 = [6,7,8,9,10];
-let a3 = [11,12,1,3,6];
-let concat = a1.concat(a2,a3);
-console.log(concat); // It is used to concatenate two or more arrays
-a1.sort() // It is used to sort array in ascending order
-console.log(a1); 
-const num = [2,3,4,5,];
-num.splice(2,3,777); // It will remove the first three elements from the array
+let concat = a1.concat(a2, a3); // Concatenates arrays
+console.log(concat);
+
+a1.sort(); // Sorts `a1` in ascending order
+console.log(a1);
+
+const num = [2, 3, 4, 5];
+num.splice(2, 2, 777); // Removes 2 elements from index 2 and inserts 777
 console.log(num);
-console.log(num.slice(1,2)); // It will return the second element of the array
-const num = [2,3,4,5,];
-num.splice(2,3,777); // It will remove the first three elements from the array
-console.log(num);
-console.log(num.slice(1,2)); // It will return the second element of the array
+
+console.log(num.slice(1, 2)); // Extracts element at index 1
