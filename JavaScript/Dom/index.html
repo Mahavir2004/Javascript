@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+
+
+        }
+
+        .box {
+            display: flex;
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+
+            justify-content: center;
+            align-items: center;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">Box1</div>
+        <div class="box">Box2</div>
+        <div class="box">Box2 </div>
+        <div class="box">Box2</div>
+        <div class="box">Box2</div>
+    </div>
+    <script>
+        console.log(document.body.firstElementChild.children[2].style.backgroundColor = "red");
+        console.log(document.body.firstElementChild.children[2].style.color = "yellow");
+
+    </script>
+
+
+ 
+
+
+</body>
+
+</html>
